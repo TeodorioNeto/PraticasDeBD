@@ -28,8 +28,7 @@ class Mapper:
         for word, count in self.H.items():
           if word.isalpha():
             print('%s\t%s' % (word, count))
-
-# Exemplo de uso
+    
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='latin1')
 mapper = Mapper()
 
