@@ -35,4 +35,3 @@ for line in input_stream:
     mapper.Map("doc1", line)
 
 mapper.Close()
-

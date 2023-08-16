@@ -26,8 +26,9 @@ class Mapper:
 
     def Close(self):
         for word, count in self.H.items():
+          if word.isalpha():
             print('%s\t%s' % (word, count))
-          
+    
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='latin1')
 mapper = Mapper()
 
@@ -35,4 +36,3 @@ for line in input_stream:
     mapper.Map("doc1", line)
 
 mapper.Close()
-
