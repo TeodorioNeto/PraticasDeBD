@@ -26,7 +26,6 @@ class Mapper:
 
     def Close(self):
         for word, count in self.H.items():
-          if self.H[word]==1:
             print('%s\t%s' % (word, count))
           
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='latin1')
