@@ -11,8 +11,7 @@ class Mapper:
 
         d = d.strip()
         d = re.sub(r'[^\w\s]', '', d)
-        d = d.lower()
-
+        
         for x in d:
             if x in punctuations:
                 d = d.replace(x, " ")
